@@ -1,10 +1,10 @@
-import streamlit
-import snowflake.connector
-import pandas
 
 import streamlit
-import snowflake.connector
 import pandas
+import requests
+import snowflake.connector
+from urllib.error import URLError
+
 streamlit.title('Zena\'s Amazing Athleisure Catalog')
 # connect to snowflake
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
